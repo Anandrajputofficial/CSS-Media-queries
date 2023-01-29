@@ -1,0 +1,56 @@
+(1) What are media qureies in CSS and their use cases?
+
+Media queries in CSS allow you to apply different styles based on the device's characteristics (such as screen size, device orientation, and so on).
+
+Use cases:
+
+Responsive web design, adjusting the layout and styles of a website to different screen sizes
+Separate mobile, tablet, and desktop styles
+Displaying different styles based on device orientation (landscape or portrait)
+Creating print styles to format a page when printed
+Applying specific styles based on screen resolution, device type, and more.
+
+(2) Different between min-width and max midth in media queries in CSS ?
+
+min-width and max-width are used in media queries in CSS to set the minimum and maximum width for which the associated styles should be applied.
+
+min-width is used to set a minimum width limit for the viewport. When the viewport is narrower than the specified min-width, the styles associated with the media query are not applied.
+
+max-width is used to set a maximum width limit for the viewport. When the viewport is wider than the specified max-width, the styles associated with the media query are not applied.
+
+Example:
+
+css
+
+/* styles for viewports wider than 400px */
+@media only screen and (min-width: 400px) {
+  /* styles here */
+}
+
+/* styles for viewports narrower than 700px */
+@media only screen and (max-width: 700px) {
+  /* styles here */
+}
+
+(3) Expalain float property and clear property in CSS with examples?
+
+float property in CSS is used to specify how an element should float within its containing element. It allows text and inline elements to wrap around the floated element.
+
+Example:
+
+css
+
+.image {
+  float: right; /* other possible values: left, none */
+}
+clear property in CSS is used to specify if an element should not be next to a floating element. It helps to control the layout of a page by preventing elements from wrapping around floated elements.
+
+Example:
+
+css
+
+.text {
+  clear: both; /* other possible values: left, right, none */
+}
+
+
